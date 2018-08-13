@@ -2,6 +2,17 @@
 
 namespace Performance
 {
+	long long GetRtcValue()
+	{
+		long long value;
+		__asm
+		{
+			MOV DWORD PTR [value], EAX
+			MOV DWORD PTR [value + 4], EDX
+		}
+		return value;
+	}
+
 	Performance::Measurer::Measurer(Performance::MeasureUnit measureUnit)
 		:_measureUnit(measureUnit), _state(0), _result(0)
 	{
