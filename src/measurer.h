@@ -1,5 +1,5 @@
-#ifndef SRC_MEASURE_H
-#define SRC_MEASURE_H
+#ifndef SRC_MEASURER_H
+#define SRC_MEASURER_H
 
 namespace Perfomance
 {
