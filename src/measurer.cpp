@@ -2,8 +2,8 @@
 
 namespace Performance
 {
-	Performance::Measurer::Measurer()
-		:_state(0), _result(0)
+	Performance::Measurer::Measurer(Performance::MeasureUnit measureUnit)
+		:_measureUnit(measureUnit), _state(0), _result(0)
 	{
 
 	}

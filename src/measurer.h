@@ -29,10 +29,18 @@ namespace Performance
 	/// REMARKS:
 	///    All measure could be in accurate due to a lot of factors (CPU cache usage, dynamic frequency changes (i.e. Turbo Boost), energy saving mode, e.t.c.)
 	/// ###################################################################################################################################################################################
+
+	enum class MeasureUnit : int
+	{
+		RTC = 1,
+		HPET = 2,
+		OTHER = 3 // get_clock 4 Linux and QueryPerformanceCounter 4 Windows
+	};
+
 	class Measurer
 	{
 	public:
-		Measurer();
+		Measurer(Performance::MeasureUnit measureUnit = Performance::MeasureUnit::RTC);
 		// delete copy constructor, des
 		//~Measurer() delete
 		void Start();
@@ -40,6 +48,7 @@ namespace Performance
 		inline bool IsRunning() { return _state; }
 		inline long long GetResult() { return _result; }
 	private:
+		Performance::MeasureUnit _measureUnit;
 		long long _result;
 		bool _state;
 	};
