@@ -41,3 +41,4 @@
 *.ipch
 # Nuget
 *packages/
+vs-project/PerfomanceMeasurer/\.vs/
