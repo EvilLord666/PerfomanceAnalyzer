@@ -3,7 +3,7 @@
 
 #include "platform.h"
 
-namespace Performance
+namespace Perfomance
 {
 	/// ####################################################################### TIME MEASURE SURVEY SUMMARY #############################################################################
 	/// Windows:
@@ -32,7 +32,7 @@ namespace Performance
 	///    All measure could be in accurate due to a lot of factors (CPU cache usage, dynamic frequency changes (i.e. Turbo Boost), energy saving mode, e.t.c.)
 	/// ###################################################################################################################################################################################
 
-	enum class MeasureUnit : int
+	enum MeasureUnit
 	{
 		RTC = 1,
 		HPET = 2,
@@ -43,7 +43,7 @@ namespace Performance
 	{
 	public:
         Measurer() {}
-		Measurer(Performance::MeasureUnit measureUnit);
+		Measurer(Perfomance::MeasureUnit measureUnit);
 		// delete copy constructor, des
 		//~Measurer() delete
 		void Start();
@@ -51,7 +51,7 @@ namespace Performance
 		inline bool IsRunning() { return _state; }
 		inline long long GetResult() { return _result; }
 	private:
-		Performance::MeasureUnit _measureUnit;
+		Perfomance::MeasureUnit _measureUnit;
 		long long _result;
 		bool _state;
 	};

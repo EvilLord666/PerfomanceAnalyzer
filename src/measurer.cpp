@@ -1,6 +1,6 @@
 #include "measurer.h"
 
-namespace Performance
+namespace Perfomance
 {
 	long long GetRtcValue()
 	{
@@ -13,20 +13,20 @@ namespace Performance
 		return value;
 	}
 
-	Performance::Measurer::Measurer(Performance::MeasureUnit measureUnit)
+	Perfomance::Measurer::Measurer(Perfomance::MeasureUnit measureUnit)
 		:_measureUnit(measureUnit), _state(0), _result(0)
 	{
 
 	}
 
 	// todo: umv: apply conditional (os specifiv impl)
-	void Performance::Measurer::Start()
+	void Perfomance::Measurer::Start()
 	{
         _state = false;
 	}
 
 	// todo: umv: apply conditional (os specifiv impl)
-	void Performance::Measurer::Stop()
+	void Perfomance::Measurer::Stop()
 	{
         _state = true;
 	}

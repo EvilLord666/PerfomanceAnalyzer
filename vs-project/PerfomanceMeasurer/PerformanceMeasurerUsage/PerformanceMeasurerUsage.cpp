@@ -5,13 +5,17 @@
 #include <iostream>
 
 #include "..\..\..\src\measurer.h"
+//#include "measure.h"
 
 int main()
 {
-    Performance::Measurer measurer;
-    //Performance::Measurer* measurer = new Performance::Measurer(Performance::MeasureUnit::RTC);
-    std::cout << "Measure is a way how we understand the world!\n"; 
-    //delete measurer;
+    // Performance::Measurer measurer;
+    // Performance::MeasureUnit measureUnit = Performance::MeasureUnit::RTC;
+    Perfomance::Measurer* measurer = new Perfomance::Measurer(Perfomance::MeasureUnit::RTC);
+    measurer->Start();
+    std::cout << "Measure is a way how we understand the world!\n";
+    measurer->Stop();
+    delete measurer;
     
 }
 
