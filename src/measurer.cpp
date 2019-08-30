@@ -22,12 +22,12 @@ namespace Performance
 	// todo: umv: apply conditional (os specifiv impl)
 	void Performance::Measurer::Start()
 	{
-		
+        _state = false;
 	}
 
 	// todo: umv: apply conditional (os specifiv impl)
 	void Performance::Measurer::Stop()
 	{
-
+        _state = true;
 	}
 }

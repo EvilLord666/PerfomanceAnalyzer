@@ -1,6 +1,8 @@
 #ifndef SRC_MEASURER_H
 #define SRC_MEASURER_H
 
+#include "platform.h"
+
 namespace Performance
 {
 	/// ####################################################################### TIME MEASURE SURVEY SUMMARY #############################################################################
@@ -37,10 +39,11 @@ namespace Performance
 		OTHER = 3 // get_clock 4 Linux and QueryPerformanceCounter 4 Windows
 	};
 
-	class Measurer
+	class EXPORT Measurer
 	{
 	public:
-		Measurer(Performance::MeasureUnit measureUnit = Performance::MeasureUnit::RTC);
+        Measurer() {}
+		Measurer(Performance::MeasureUnit measureUnit);
 		// delete copy constructor, des
 		//~Measurer() delete
 		void Start();
