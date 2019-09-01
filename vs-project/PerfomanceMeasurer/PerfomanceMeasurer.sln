@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerfomanceMeasurer", "PerfomanceMeasurer\PerfomanceMeasurer.vcxproj", "{81678154-B29C-4A21-AD42-801EE1FF7274}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformanceMeasurerUsage", "PerformanceMeasurerUsage\PerformanceMeasurerUsage.vcxproj", "{B9F4576C-B12D-4BBC-9188-169E9DD339F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerfomanceMeasurerUsage", "PerformanceMeasurerUsage\PerformanceMeasurerUsage.vcxproj", "{B9F4576C-B12D-4BBC-9188-169E9DD339F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,16 +15,16 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x64.ActiveCfg = Debug|x64
-		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x64.Build.0 = Debug|x64
+		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x64.ActiveCfg = Debug|Win32
+		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x64.Build.0 = Debug|Win32
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x86.ActiveCfg = Debug|Win32
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Debug|x86.Build.0 = Debug|Win32
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Release|x64.ActiveCfg = Release|x64
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Release|x64.Build.0 = Release|x64
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Release|x86.ActiveCfg = Release|Win32
 		{81678154-B29C-4A21-AD42-801EE1FF7274}.Release|x86.Build.0 = Release|Win32
-		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x64.ActiveCfg = Debug|x64
-		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x64.Build.0 = Debug|x64
+		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x64.ActiveCfg = Debug|Win32
+		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x64.Build.0 = Debug|Win32
 		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x86.ActiveCfg = Debug|Win32
 		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Debug|x86.Build.0 = Debug|Win32
 		{B9F4576C-B12D-4BBC-9188-169E9DD339F4}.Release|x64.ActiveCfg = Release|x64

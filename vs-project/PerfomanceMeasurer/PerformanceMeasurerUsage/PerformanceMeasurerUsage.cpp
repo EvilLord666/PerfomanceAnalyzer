@@ -2,10 +2,12 @@
 //
 
 #include "pch.h"
+#include <windows.h>
 #include <iostream>
+#include <synchapi.h>
 
 #include "..\..\..\src\measurer.h"
-//#include "measure.h"
+
 
 int main()
 {
@@ -14,7 +16,11 @@ int main()
     Perfomance::Measurer* measurer = new Perfomance::Measurer(Perfomance::MeasureUnit::RTC);
     measurer->Start();
     std::cout << "Measure is a way how we understand the world!\n";
+    Sleep(50);
     measurer->Stop();
+    int cmd;
+    std::cout << "Measured time is: "<<measurer->GetResult() << std::endl;
+    std::cin >> cmd;
     delete measurer;
     
 }

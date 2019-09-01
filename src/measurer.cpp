@@ -1,10 +1,11 @@
 #include "measurer.h"
+#include <windows.h>
 
 namespace Perfomance
 {
     long long GetRtcValue()
     {
-        long long value;
+        long long value = 0;
         __asm
         {
             MOV DWORD PTR [value], EAX
@@ -23,11 +24,13 @@ namespace Perfomance
     void Perfomance::Measurer::Start()
     {
         _state = false;
+        _result = GetRtcValue();
     }
 
     // todo: umv: apply conditional (os specifiv impl)
     void Perfomance::Measurer::Stop()
     {
         _state = true;
+        _result = GetRtcValue() - _result;
     }
 }
