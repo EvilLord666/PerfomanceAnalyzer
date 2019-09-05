@@ -19,7 +19,7 @@ int main()
     Sleep(50);
     measurer->Stop();
     int cmd;
-    std::cout << "Measured time is: "<<measurer->GetResult() << std::endl;
+    std::cout << "Measured time is: "<<measurer->GetResult() <<" ticks."<< std::endl;
     std::cin >> cmd;
     delete measurer;
     

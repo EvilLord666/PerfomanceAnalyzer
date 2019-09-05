@@ -6,8 +6,10 @@ namespace Perfomance
     long long GetRtcValue()
     {
         long long value = 0;
+        // todo: umv: make it universal and working under linux
         __asm
         {
+            RDTSC
             MOV DWORD PTR [value], EAX
             MOV DWORD PTR [value + 4], EDX
         }
